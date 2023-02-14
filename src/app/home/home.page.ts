@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  mensagem: string='';
-  constructor() {}
+  n1:string='';
+  n2:string='';
+  res:number=0;
 
-  exibirMensagem(){
-    this.mensagem="Bem Vindo ao Ionic";
+  constructor(){}
+
+  somar(){
+    this.res=parseFloat(this.n1)+parseFloat(this.n2);
   }
-
 }
